@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Hind Siliguri', 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-33.3333%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Premium Shake animation for Buy Now button (Tilt Left, Level, Tilt Right, Level) */
+@keyframes shake-buynow {
+  0%, 100% {
+    transform: rotate(0deg) scale(1);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  15% {
+    transform: rotate(3deg) scale(1.03); /* Lifts left side up */
+    box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.12);
+  }
+  25% {
+    transform: rotate(0deg) scale(1.03); /* Level */
+  }
+  35% {
+    transform: rotate(-3deg) scale(1.03); /* Lifts right side up */
+    box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.12);
+  }
+  45% {
+    transform: rotate(0deg) scale(1.03); /* Level */
+  }
+  60% {
+    transform: rotate(0deg) scale(1); /* Return to scale 1 */
+  }
+}
+
+.animate-shake-buynow {
+  animation: shake-buynow 2s infinite ease-in-out;
+}
+
+/* Glowing breathing animation for active Weight option */
+@keyframes pulse-weight-active {
+  0%, 100% {
+    box-shadow: 0 0 0px 0px rgba(16, 185, 129, 0);
+    border-color: rgba(16, 185, 129, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 14px 4px rgba(16, 185, 129, 0.5);
+    border-color: rgba(16, 185, 129, 1);
+  }
+}
+
+.animate-pulse-weight {
+  animation: pulse-weight-active 1.8s infinite ease-in-out;
+}
+
+/* Glowing breathing animation for inactive Weight option */
+@keyframes pulse-weight-inactive {
+  0%, 100% {
+    box-shadow: 0 0 0px 0px rgba(245, 158, 11, 0);
+    border-color: rgba(226, 232, 240, 1);
+  }
+  50% {
+    box-shadow: 0 0 12px 4px rgba(245, 158, 11, 0.45);
+    border-color: rgba(245, 158, 11, 0.8);
+  }
+}
+
+.animate-pulse-weight-inactive {
+  animation: pulse-weight-inactive 2.2s infinite ease-in-out;
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Print Styles for Cash Memo & Request Slip */
+@media print {
+  /* Hide the rest of the application */
+  body * {
+    visibility: hidden;
+  }
+  
+  /* Make only the printable element and its children visible */
+  #printable-memo, 
+  #printable-memo *,
+  #printable-request-slip,
+  #printable-request-slip *,
+  #printable-customer-memo,
+  #printable-customer-memo * {
+    visibility: visible;
+  }
+  
+  /* Position the printable element at the top-left */
+  #printable-memo,
+  #printable-request-slip,
+  #printable-customer-memo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100% !important;
+    max-width: 100% !important;
+    background: white !important;
+    color: black !important;
+    padding: 20px !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+  }
+  
+  /* Hide UI helper controls (like print, cancel, update buttons) */
+  .no-print {
+    display: none !important;
+  }
+}
+

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "3",
+    "name": "তেল ও ঘি",
+    "slug": "oil-ghee",
+    "icon": "Droplet"
+  },
+  {
+    "id": "2",
+    "name": "মধু",
+    "slug": "honey",
+    "icon": "Jar"
+  },
+  {
+    "id": "1",
+    "name": "হোমমেড",
+    "slug": "homemade",
+    "icon": "Home"
+  },
+  {
+    "id": "4",
+    "name": "গুড় ও চিনি",
+    "slug": "jaggery-sugar",
+    "icon": "Cookie"
+  },
+  {
+    "id": "8",
+    "name": "খাঁটি শস্য",
+    "slug": "pure-grains",
+    "icon": "Wheat"
+  },
+  {
+    "id": "7",
+    "name": "খেজুর",
+    "slug": "dates",
+    "icon": "Calendar"
+  },
+  {
+    "id": "6",
+    "name": "ফ্রেশ আম",
+    "slug": "fresh-mango",
+    "icon": "Apple"
+  },
+  {
+    "id": "5",
+    "name": "লাচ্ছা সেমাই",
+    "slug": "laccha-semai",
+    "icon": "Wind"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "U-581932",
+    "name": "রফিক উল্লাহ",
+    "phone": "01712345678",
+    "password": "password123",
+    "address": "বাসা #১০, রোড #২, সেক্টর #৪",
+    "district": "ঢাকা",
+    "area": "উত্তরা",
+    "role": "user",
+    "status": "active",
+    "createdAt": "২৫ জুন, ২০২৬"
+  },
+  {
+    "id": "U-392104",
+    "name": "তাহমিনা বেগম",
+    "phone": "01876543210",
+    "password": "password123",
+    "address": "জিইসি মোড়, লালখান বাজার",
+    "district": "চট্টগ্রাম",
+    "area": "কোতোয়ালী",
+    "role": "user",
+    "status": "active",
+    "createdAt": "২৪ জুন, ২০২৬"
+  },
+  {
+    "id": "U-130163",
+    "name": "Mehedi Hasan",
+    "phone": "01837587551",
+    "password": "password123",
+    "address": "উজিরপুর, চাম্পাফুল, কালিগঞ্জ, সাতক্ষীরা",
+    "district": "সাতক্ষীরা",
+    "area": "কালিগঞ্জ",
+    "role": "admin",
+    "status": "active",
+    "createdAt": "০১ জুলাই, ২০২৬"
+  }
+]
